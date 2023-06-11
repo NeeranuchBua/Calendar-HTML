@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+   
+    <div class="container">
+      
+      <div class="calendar">
+        
+        <div class="month">
+          <i class="fas fa-angle-left prev"></i>
+          <div class="date">
+            <h1></h1>
+            <p></p>
+          </div>
+          <i class="fas fa-angle-right next"></i>
+        </div>
+        <div class="weekdays">
+          <div style="color: red;">Sun</div>
+          <div style="color: yellow;" >Mon</div>
+          <div style="color: pink;" >Tue</div>
+          <div style="color: green;" >Wed</div>
+          <div style="color: orange;">Thu</div>
+          <div style="color: blue;">Fri</div>
+          <div style="color: blueviolet;">Sat</div>
+        </div>
+        <div class="days"></div>
+      </div>
+
+
+      <!-- //event -->
+
+
+      <div class="event">
+      <form name="myForm" id="form"  onsubmit="">
+        <div class="row">
+            <div class="col-20">
+              <label style="color: black;" for="ename">Title Event</label>
+            </div>
+            <div class="col-80">
+              <input type="text" id="ename" name="eventName"   >
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-20">
+              <label style="color: rgb(8, 7, 7);" for="Date">Date</label>
+            </div>
+            <div class="col-80">
+              <input  type="date" id="date" name="Date"  >
+            </div>
+          </div>  
+
+          <div class="row">
+            <div class="col-20">
+              <label style="color: rgb(8, 7, 7);" for="time">time</label>
+            </div>
+            <div class="col-80">
+              <input type="time" id="time" name="time"  >
+            </div>
+          </div>  
+
+          <div class="row">
+            <div class="col-20">
+              <label style="color: black;" for="dname">Description</label>
+            </div>
+            <div class="col-80">
+              <input type="text" id="dname" name="dname" >
+            </div>
+          </div>
+
+          <div>
+ 
+              <input type="submit" value="Submit" id="submit">
+         
+            
+            
+          </div>
+
+        </form>
+
+        <div style="color: black; " class="showEvent">
+          
+          <div>
+            <h3 id="result"></h3>
+            
+          </div>
+
+        </div>
+      </div>
+
+
+    
+
+    <script src="script.js"></script>
+  </body>
+  
+</html>
